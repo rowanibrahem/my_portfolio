@@ -6,99 +6,96 @@ abstract class AppConstants {
   static const double appBarHeight = 80;
   static const List<CustomService> services = [
     CustomService(
-      service: 'MOBILE DEVELOPMENT',
+      service: 'Flutter DEVELOPMENT',
       logo: AppAssets.androidLogo,
       description:
-          'I am a Junior mobile developer. I have experience using Dart and Flutter Framework.',
+          'Crafting high-performance, user-friendly apps with features like API integration, state management (Bloc/Provider), and secure payment gateways',
     ),
     CustomService(
-      service: 'UI & UX DESIGNING',
+      service: 'Project Manager',
       logo: AppAssets.uiDesignLogo,
       description:
-          'I design beautiful web interfaces with Figma and Adobe XD. I design beautiful web interfaces with Figma and Adobe XD.',
+          'Leading Agile projects, gathering requirements, managing teams, and ensuring on-time delivery.',
     ),
     CustomService(
-      service: 'WEB SCRAPING',
+      service: 'Tech Writing & Training',
       logo: AppAssets.scrappingLogo,
       description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
+          'Creating technical documentation, mentoring on Flutter, and delivering development workshops.',
     ),
   ];
   static const List<Project> projects = [
     Project(
-      name: 'Live score',
+      name: 'Educational App',
       imageUrl:
-          'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
+          'assets/images/onboarging.png',
       description:
-          'A football application to display all related matches and rankings in all international and local tournaments',
-      githubRepoLink: 'https://github.com/radyhaggag/live_score',
-      previewLink: 'https://youtu.be/HSIosFd6Sys',
+          'Educational App show courses in diffrent category and details of them  with ability to add to cart and pay it with paybal',
+      githubRepoLink: 'https://github.com/rowanibrahem/afro_app.git',
+      previewLink: 'https://drive.google.com/file/d/1-TeRzaO19VKidAVVDgGIploHsHLc4h9W/view?usp=drive_link',
     ),
     Project(
-      name: 'Instagram clone',
+      name: 'Rabeh App',
       imageUrl:
           'https://drive.google.com/uc?id=1qNFCNYdUo7o36ythQtjaSrv7L0NV_Vnv',
       description:
-          'Social media application for share posts and stories with people, One-to-one chat, Share reels videos',
+          'App to easy settelement',
       githubRepoLink:
-          'https://github.com/radyhaggag/Instagram-Clone-With-Clean-Architecture',
-      previewLink: 'https://youtu.be/MuuVjqrR49g',
+          '',
+      previewLink: 'https://play.google.com/store/apps/details?id=com.rabeh.rabehdriver',
     ),
     Project(
-      name: 'TikTok Downloader',
+      name: 'Meal App',
       imageUrl:
           'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
       description:
-          'An application for download videos from tiktok and save it to gallery.',
-      githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
-      previewLink: 'https://youtu.be/mWeA625pcrI',
+          'App to preview Meals have two themes and two languages',
+      githubRepoLink: 'https://github.com/rowanibrahem/Meal-App',
+      previewLink: 'https://www.linkedin.com/posts/rowanibrahem_flutterdeveloper-fluttercommunity-fluterapps-activity-7054887126403850240-OIFJ?utm_source=share&utm_medium=member_desktop',
     ),
     Project(
-      name: 'Bookly',
+      name: 'Dar Elsoker',
       imageUrl:
           'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
-      description: 'An application to explore books and view their details.',
+      description: 'As a project manager , I lead this project about clinical management system',
       githubRepoLink:
-          'https://github.com/radyhaggag/bookly_app_with_mvvm_and_bloc',
-      previewLink: 'https://youtu.be/3nU_dYjsPsg',
+          '',
+      previewLink: 'https://www.linkedin.com/posts/rowanibrahem_projectmanagement-agile-softwaredevelopment-activity-7228808337008541697-9Q7T?utm_source=share&utm_medium=member_android',
     ),
     Project(
-      name: 'Image processing',
+      name: 'MidLink Hub',
       imageUrl:
           'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
       description:
-          'An Desktop program for process images and apply some filters to them.',
-      githubRepoLink:
-          'https://github.com/radyhaggag/image_processing_program_with_python_flet',
-      previewLink: 'https://youtu.be/s1KFdBKNFig',
+          'It is about referring systems in hospitals and I just made it as prototype.',
+      previewLink: 'https://www.linkedin.com/posts/rowanibrahem_innovegypt-midlinkhub-innovegypt-activity-7237907549885259776-iKRF?utm_source=share&utm_medium=member_android',
     ),
     Project(
-      name: 'Salat al janazah',
+      name: 'My Articles',
       imageUrl:
           'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
       description:
-          'An application for add janazah prayer and view the prayers for nearby people',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
-      previewLink: 'https://youtu.be/wK9Y9BhP190',
+          'I wrot articles in diffrent topics such as clan code , CI/CD in flutter and text overflow ',
+      previewLink: 'https://www.linkedin.com/newsletters/tech-tales-7214681089842307073/',
     ),
-    Project(
-      name: 'Ghaslah',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
-      description:
-          'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
-      previewLink: 'https://youtu.be/gkeRSAfCZaI',
-    ),
-    Project(
-      name: 'Zawilan',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
-      description:
-          'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
-      previewLink: 'https://youtu.be/g92W-SmfkKc',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
-    ),
+    // Project(
+    //   name: 'Ghaslah',
+    //   imageUrl:
+    //       'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
+    //   description:
+    //       'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
+    //   previewLink: 'https://youtu.be/gkeRSAfCZaI',
+    // ),
+    // Project(
+    //   name: 'Zawilan',
+    //   imageUrl:
+    //       'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
+    //   description:
+    //       'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
+    //   previewLink: 'https://youtu.be/g92W-SmfkKc',
+    //   googlePlay:
+    //       'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
+    // ),
   ];
+  static const defaultPadding = 20.0;
 }

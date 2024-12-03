@@ -11,6 +11,8 @@ extension AppBarHeaderExtension on AppBarHeaders {
         return 'About me';
       case AppBarHeaders.projects:
         return 'Projects';
+         case AppBarHeaders.certifcates:
+        return 'Certificates';
       case AppBarHeaders.contact:
         return 'Contact';
     }

@@ -16,15 +16,10 @@ class IntroImage extends StatelessWidget {
       smallScreenSize: context.width * .26,
     );
 
-    return Positioned(
-      // alignment: Alignment.topRight,
-      top: 0,
-      right: 8,
-      child: Image.asset(
-        AppAssets.devImg,
-        width: responsiveSize.getSize(),
-        height: responsiveSize.getSize(),
-      ),
+    return Image.asset(
+      AppAssets.devImg,
+      width: responsiveSize.getSize(),
+      height: responsiveSize.getSize(),
     );
   }
 }

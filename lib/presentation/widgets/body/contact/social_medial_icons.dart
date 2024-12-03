@@ -10,7 +10,7 @@ class SocialMediaIcons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Wrap(
+    return  const Wrap(
       children: [
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.facebook,
@@ -18,7 +18,7 @@ class SocialMediaIcons extends StatelessWidget {
         ),
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.instagram,
-          link: SocialLinks.instagram,
+          link: SocialLinks.gitHub,
         ),
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.linkedinIn,
@@ -26,7 +26,7 @@ class SocialMediaIcons extends StatelessWidget {
         ),
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.twitter,
-          link: SocialLinks.twitter,
+          link: SocialLinks.meduim,
         ),
       ],
     );

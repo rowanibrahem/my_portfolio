@@ -21,7 +21,7 @@ class IntroCircleImageBox extends StatelessWidget {
       child: const Stack(
         alignment: Alignment.centerRight,
         children: [
-          CircleImageBorder(),
+          // CircleImageBorder(),
           IntroImage(),
         ],
       ),

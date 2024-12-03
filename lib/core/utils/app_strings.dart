@@ -1,13 +1,13 @@
 abstract class AppStrings {
-  static const String developerName = 'Rady Haggag';
+  static const String developerName = 'Rowan Ibrahim';
   static const String helloIM = 'Hello, i’m';
   static const String introMsg =
-      "Flutter developer with +2 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.";
+      "Flutter developer and Project Manager with +1 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.";
   static String aboutMeMsg =
-      "I'm a Flutter developer with a good understanding of the Flutter framework, I have experience in UI design, API integration, clean code writing and knowledge of solid principles and clean architecture. I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users";
-  static const String numOfExperience = '2+';
+      "I am a Flutter developer with over one year of experience in building robust, user-centric applications. My expertise spans UI/UX design, API integration, clean code principles, and implementing solid software architecture. I have successfully led and collaborated on diverse projects across domains such as healthcare, education, and logistics.In addition to development, I have experience in project management, mentoring students, and delivering high-quality software solutions that ensure seamless user experiences. I take pride in my ability to bridge technical and business needs, delivering applications that meet user requirements efficiently and effectively.";
+  static const String numOfExperience = '1+';
   static const String experienceMsg =
-      'Years of experience, Specialized in building apps, while ensuring a seamless web experience for end users.';
+      'Years of experience, Specialized in building apps, mentoring Students and lead in some projects.';
   static const String servicesIOffer = 'The services i offer:';
   static const String featuredProjects = 'Featured projects';
   static const String projectsMsg =

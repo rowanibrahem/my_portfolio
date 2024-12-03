@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart'; // Add this import
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
@@ -14,12 +15,10 @@ class IntoActions extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> actions = [
       CustomButton(
-        label: AppBarHeaders.aboutMe.getString(),
-        icon: Icons.person,
+        label: 'My CV', 
+        icon: Icons.download, 
         backgroundColor: AppColors.primaryColor,
-        onPressed: () {
-          context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(1));
-        },
+        onPressed: _downloadCV, 
         width: 160,
       ),
       context.width < DeviceType.ipad.getMaxWidth()
@@ -44,5 +43,14 @@ class IntoActions extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: actions,
           );
+  }
+
+  void _downloadCV() async {
+    const url = 'https://drive.google.com/file/d/1gazFnFHElZTTb15yUy2K_qJbgN93gzXf/view?usp=sharing'; 
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
