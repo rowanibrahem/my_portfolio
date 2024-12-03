@@ -1,6 +1,6 @@
 abstract class AppStrings {
   static const String developerName = 'Rowan Ibrahim';
-  static const String helloIM = 'Hello, i’m';
+  static const String helloIM = 'Hello, I’m';
   static const String introMsg =
       "Flutter developer and Project Manager with +1 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.";
   static String aboutMeMsg =

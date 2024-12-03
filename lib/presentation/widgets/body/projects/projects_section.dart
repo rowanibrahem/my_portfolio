@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/certifications/components/title_text.dart';
+import 'package:portfolio/presentation/widgets/body/projects/projects_grid.dart';
 
-import 'projects_grid.dart';
+
 import 'projects_intro.dart';
 
 class ProjectsSection extends StatelessWidget {
@@ -13,7 +15,8 @@ class ProjectsSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ProjectsIntro(),
+          // const ProjectsIntro(),
+          TitleText(prefix: 'Featured', title: 'Projects',),
           SizedBox(height: 52),
           ProjectsGrid(),
         ],

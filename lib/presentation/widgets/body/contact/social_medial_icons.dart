@@ -17,7 +17,7 @@ class SocialMediaIcons extends StatelessWidget {
           link: SocialLinks.facebook,
         ),
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.instagram,
+          icon: FontAwesomeIcons.github,
           link: SocialLinks.gitHub,
         ),
         SocialMediaIconBtn(
@@ -25,7 +25,7 @@ class SocialMediaIcons extends StatelessWidget {
           link: SocialLinks.linkedin,
         ),
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.twitter,
+          icon: FontAwesomeIcons.medium,
           link: SocialLinks.meduim,
         ),
       ],

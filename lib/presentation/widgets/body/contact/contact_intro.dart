@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/certifications/components/title_text.dart';
 import 'package:portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
 
 import '../../../../core/utils/app_strings.dart';
@@ -12,11 +13,12 @@ class ContactIntro extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FittedBox(
-          child: Text(
-            AppStrings.contactWithMe,
-            style: AppStyles.s32,
-          ),
+        const FittedBox(
+          child:  TitleText(prefix: 'Contact', title: 'With Me',),
+          // Text(
+          //   AppStrings.contactWithMe,
+          //   style: AppStyles.s32,
+          // ),
         ),
         const SizedBox(height: 8),
         Text(

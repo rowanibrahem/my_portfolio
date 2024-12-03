@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/certifications/components/title_text.dart';
 
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_enums.dart';
@@ -13,11 +14,12 @@ class AboutMeIntro extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FittedBox(
-          child: Text(
-            AppBarHeaders.aboutMe.getString(),
-            style: AppStyles.s32,
-          ),
+        const FittedBox(
+          child: const TitleText(prefix: 'About', title: 'Me',),
+          // Text(
+          //   AppBarHeaders.aboutMe.getString(),
+          //   style: AppStyles.s32,
+          // ),
         ),
         const SizedBox(height: 8),
         Text(

@@ -22,7 +22,7 @@ class ProjectItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ProjectImage(imageUrl: project.imageUrl),
+          // ProjectImage(imageUrl: project.imageUrl),
           const SizedBox(height: 16),
           FittedBox(
             child: Text(
@@ -41,7 +41,7 @@ class ProjectItem extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           // if (project.previewLink != null || project.githubRepoLink != null)
-          ProjectActions(project: project)
+          ProjectActions(project: project),
         ],
       ),
     );

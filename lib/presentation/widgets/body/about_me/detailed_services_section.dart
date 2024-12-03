@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/certifications/components/title_text.dart';
 
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
@@ -10,17 +11,18 @@ class DetailedServicesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         FittedBox(
-          child: Text(
-            AppStrings.servicesIOffer,
-            style: AppStyles.s32,
-          ),
+          child:  TitleText(prefix: 'The Service', title: 'I offer',),
+          // Text(
+          //   AppStrings.servicesIOffer,
+          //   style: AppStyles.s32,
+          // ),
         ),
-        const SizedBox(height: 32),
-        const DetailedServicesGrid(),
+        SizedBox(height: 32),
+        DetailedServicesGrid(),
       ],
     );
   }

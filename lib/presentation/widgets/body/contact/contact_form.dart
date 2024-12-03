@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:mailer/mailer.dart';
+import 'package:mailer/smtp_server/gmail.dart';
+import 'package:http/http.dart' as http;
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
@@ -77,7 +79,7 @@ class _ContactFormState extends State<ContactForm> {
             const SizedBox(height: 16),
             CustomButton(
               label: 'Submit',
-              onPressed: () {},
+              onPressed: _sendEmail,
               backgroundColor: AppColors.primaryColor,
               width: _getFormWidth(context.width),
             ),
@@ -97,5 +99,67 @@ class _ContactFormState extends State<ContactForm> {
     } else {
       return deviceWidth / 2.5;
     }
+  }
+ Future<void> _sendEmail() async {
+    // Collect form data
+    final name = _nameController.text;
+    final email = _emailController.text;
+    final subject = _subjectController.text;
+    final message = _messageController.text;
+
+    // Your EmailJS credentials (replace with your actual credentials)
+    const serviceId = 'service_qkayc9i';
+    const templateId = 'your_template_id';
+    const userId = 'your_user_id';
+
+    // Send email request to EmailJS
+    try {
+      final response = await http.post(
+        Uri.parse('https://api.emailjs.com/api/v1.0/email/send'),
+        headers: {'Content-Type': 'application/json'},
+        body: '''
+        {
+          "service_id": "$serviceId",
+          "template_id": "$templateId",
+          "user_id": "$userId",
+          "template_params": {
+            "name": "$name",
+            "email": "$email",
+            "subject": "$subject",
+            "message": "$message"
+          }
+        }
+        ''',
+      );
+
+      if (response.statusCode == 200) {
+        // Successfully sent email
+        _showDialog('Success', 'Your message has been sent.');
+      } else {
+        _showDialog('Error', 'Failed to send email.');
+      }
+    } catch (e) {
+      _showDialog('Error', 'An error occurred: $e');
+    }
+  }
+
+  void _showDialog(String title, String content) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(title),
+          content: Text(content),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('OK'),
+            ),
+          ],
+        );
+      },
+    );
   }
 }
