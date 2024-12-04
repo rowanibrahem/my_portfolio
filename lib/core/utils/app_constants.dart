@@ -28,7 +28,7 @@ abstract class AppConstants {
     Project(
       name: 'Educational App',
       imageUrl:
-          'assets/images/onboarging.png',
+          'assets/images/Afro logo 1.png',
       description:
           'Educational App show courses in diffrent category and details of them  with ability to add to cart and pay it with paybal',
       githubRepoLink: 'https://github.com/rowanibrahem/afro_app.git',
