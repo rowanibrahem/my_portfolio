@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server/gmail.dart';
 import 'package:http/http.dart' as http;
@@ -108,9 +109,9 @@ class _ContactFormState extends State<ContactForm> {
     final message = _messageController.text;
 
     // Your EmailJS credentials (replace with your actual credentials)
-    const serviceId = 'service_qkayc9i';
-    const templateId = 'your_template_id';
-    const userId = 'your_user_id';
+    final serviceId = dotenv.env['EMAILJS_SERVICE_ID']!;
+    final templateId = dotenv.env['EMAILJS_TEMPLATE_ID']!;
+    final userId = dotenv.env['EMAILJS_USER_ID']!;
 
     // Send email request to EmailJS
     try {
@@ -136,6 +137,8 @@ class _ContactFormState extends State<ContactForm> {
         // Successfully sent email
         _showDialog('Success', 'Your message has been sent.');
       } else {
+        print('Response status: ${response.statusCode}');
+        print('Response body: ${response.body}');
         _showDialog('Error', 'Failed to send email.');
       }
     } catch (e) {
