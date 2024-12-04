@@ -69,7 +69,7 @@ static const defaultPadding = 20.0;
                     launchUrl(Uri.parse(certificateList[index].credential));
                   },
                   child: Container(
-                    height: 40,
+                    height: 30,
                     width: 150,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),

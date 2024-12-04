@@ -16,7 +16,9 @@ class CertificateGrid extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30),
       itemCount: certificateList.length,
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount, childAspectRatio: ratio),
+          crossAxisCount: crossAxisCount,
+           childAspectRatio: ratio,
+           ),
       itemBuilder: (context, index) {
         return Obx(() => AnimatedContainer(
             duration: const Duration(milliseconds: 200),

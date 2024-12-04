@@ -37,26 +37,24 @@ abstract class AppConstants {
     Project(
       name: 'Rabeh App',
       imageUrl:
-          'https://drive.google.com/uc?id=1qNFCNYdUo7o36ythQtjaSrv7L0NV_Vnv',
+          'assets/images/rabeh.png',
       description:
-          'App to easy settelement',
-      githubRepoLink:
-          '',
+          'App used by drivers to to easy settelement , show thier invoices and thier orders ',
       previewLink: 'https://play.google.com/store/apps/details?id=com.rabeh.rabehdriver',
     ),
     Project(
       name: 'Meal App',
       imageUrl:
-          'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
+          'assets/images/meal2.png',
       description:
-          'App to preview Meals have two themes and two languages',
+          'App to preview Meals in diffrent categories with thier ingredients and recipes have two themes and two languages',
       githubRepoLink: 'https://github.com/rowanibrahem/Meal-App',
       previewLink: 'https://www.linkedin.com/posts/rowanibrahem_flutterdeveloper-fluttercommunity-fluterapps-activity-7054887126403850240-OIFJ?utm_source=share&utm_medium=member_desktop',
     ),
     Project(
       name: 'Dar Elsoker',
       imageUrl:
-          'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
+          'assets/images/ii.png',
       description: 'As a project manager , I lead this project about clinical management system',
       githubRepoLink:
           '',
@@ -65,7 +63,7 @@ abstract class AppConstants {
     Project(
       name: 'MidLink Hub',
       imageUrl:
-          'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
+          'assets/images/logoo.png',
       description:
           'It is about referring systems in hospitals and I just made it as prototype.',
       previewLink: 'https://www.linkedin.com/posts/rowanibrahem_innovegypt-midlinkhub-innovegypt-activity-7237907549885259776-iKRF?utm_source=share&utm_medium=member_android',
@@ -73,9 +71,9 @@ abstract class AppConstants {
     Project(
       name: 'My Articles',
       imageUrl:
-          'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
+          'assets/images/_b9de772c-df1b-4060-b527-8b055f95baf6.jpg',
       description:
-          'I wrot articles in diffrent topics such as clan code , CI/CD in flutter and text overflow ',
+          'I wrote articles in diffrent topics such as clan code , CI/CD in flutter and text overflow ',
       previewLink: 'https://www.linkedin.com/newsletters/tech-tales-7214681089842307073/',
     ),
     // Project(

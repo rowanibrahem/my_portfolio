@@ -10,20 +10,21 @@ class ProjectsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: _getCrossAxisCount(context.width),
-        crossAxisSpacing: 16,
-        mainAxisSpacing: 16,
-      ),
-      itemBuilder: (context, index) {
-        return ProjectItem(
-          project: AppConstants.projects[index],
-        );
-      },
-      itemCount: AppConstants.projects.length,
+    return  GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: _getCrossAxisCount(context.width),
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+            // childAspectRatio: _getChildAspectRatio(constraints.maxWidth),
+          ),
+          itemBuilder: (context, index) {
+            return ProjectItem(
+              project: AppConstants.projects[index],
+            );
+          },
+          itemCount: AppConstants.projects.length,
     );
   }
 
@@ -39,4 +40,11 @@ class ProjectsGrid extends StatelessWidget {
       return numOfServices > 3 ? 3 : numOfServices;
     }
   }
+
+
+  // double _getChildAspectRatio(double width) {
+  //   if (width < 600) return 1; // Square cards for mobile
+  //   if (width < 1024) return 1.5; // Rectangular cards for tablet
+  //   return 1.8; // Wider cards for desktop
+  // }
 }

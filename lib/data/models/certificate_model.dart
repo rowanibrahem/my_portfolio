@@ -38,7 +38,7 @@ List<CertificateModel> certificateList = [
   ),
   CertificateModel(
     name: 'Flutter Intern',
-    organization: 'Information Technology Software development ',
+    organization: 'Information Technology  ',
     date: 'OCT 2023',
     skills: 'Flutter . Rest API\'s',
     credential:  'https://drive.google.com/drive/folders/1faWK7JTgoIFgwMe_U7BnkFO5oXAZBSpL',
