@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:mailer/mailer.dart';
-import 'package:mailer/smtp_server/gmail.dart';
 import 'package:http/http.dart' as http;
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';

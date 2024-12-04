@@ -15,7 +15,7 @@ class AboutMeIntro extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const FittedBox(
-          child: const TitleText(prefix: 'About', title: 'Me',),
+          child: TitleText(prefix: 'About', title: 'Me',),
           // Text(
           //   AppBarHeaders.aboutMe.getString(),
           //   style: AppStyles.s32,

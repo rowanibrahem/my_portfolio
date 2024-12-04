@@ -5,7 +5,6 @@ import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../data/models/project.dart';
 import 'project_actions.dart';
-import 'project_image.dart';
 
 class ProjectItem extends StatelessWidget {
   const ProjectItem({super.key, required this.project});

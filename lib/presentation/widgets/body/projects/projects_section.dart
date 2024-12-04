@@ -3,7 +3,6 @@ import 'package:portfolio/presentation/widgets/body/certifications/components/ti
 import 'package:portfolio/presentation/widgets/body/projects/projects_grid.dart';
 
 
-import 'projects_intro.dart';
 
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});

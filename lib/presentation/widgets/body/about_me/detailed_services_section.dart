@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/presentation/widgets/body/certifications/components/title_text.dart';
 
-import '../../../../core/utils/app_strings.dart';
-import '../../../../core/utils/app_styles.dart';
 
 import 'detailed_services_grid.dart';
 
